@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawit – Gesture Powered Canvas of Imagination</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="header-row">
+      <h1><i class="fa-solid fa-paintbrush"></i> &nbsp;Drawit</h1>
+      <button id="saveBtn">
+        <i class="fa-solid fa-floppy-disk"></i>&nbsp; Save
+      </button>
+    </div>
+    <div class="layout">
+      <div class="video-wrapper">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="output-preview">
+        <canvas id="preview" width="640" height="480"></canvas>
+      </div>
+    </div>
+
+    <div class="gesture-guide">
+      <i class="fa-solid fa-hand-point-up"></i>
+      <i class="fa-solid fa-arrow-right"></i> Write
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-hand-fist"></i>
+      <i class="fa-solid fa-arrow-right"></i>
+      Erase
+    </div>
+
+    <footer class="social-footer">
+      <h2>Connect with me</h2>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/saman-siddiqui-011589257/"
+          class="social-click"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/samansiddiqui55"
+          class="social-click"
+          target="_blank"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:samansiddiqui903@gmail.com" class="social-click">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p class="credit">Made by Saman Siddiqui</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
